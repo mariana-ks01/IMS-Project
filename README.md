@@ -1,4 +1,4 @@
-Coverage: 34%
+Coverage: 58.8%
 # Inventory Management System (IMS)
 
 This is a Java project based on CRUD functionality, which allows an end user to manage an SQL database using a Command-Line Interface (CLI).
@@ -11,27 +11,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+The following software needs to be installed on your machine to be able to use this application:
+-Java
+-MySQL Server 5.7+ (local or GCP instance)
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+1. Download this project from the repository
+2. Locate the target folder
+3. Run the ims-0.0.1-jar-with-dependencies 
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+This will install the application on your machine with all dependencies needed for it to run successfully.
 
 ## Running the tests
 
@@ -41,24 +33,15 @@ Explain how to run the automated tests for this system. Break down into which te
 
 Explain what these tests test, why and how to run them
 
-```
-Give an example
-```
+Unit tests are located inside C:\Users\mniko\Desktop\IMS\IMS-22JulyEnable3\src\test\java\com\qa\ims\persistence folder.
+In order to run, simply go to each class and right-click inside one of the test classes, select: Run as -> 1 JUnit test
 
 ### Integration Tests 
-Explain what these tests test, why and how to run them
+Integration tests are located inside C:\Users\mniko\Desktop\IMS\IMS-22JulyEnable3\src\test\java\com\qa\ims\controllers folder.
+They are run in the same way as unit tests. 
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Integration tests use an h2 database, as well as mock DAO objects in order to simulate a database-manipulation environment. 
+They test the controller classes associated with each entity, in order to test whether each one can create, read, update and delete objects.
 
 ## Built With
 
@@ -87,10 +70,7 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Jordan Benbelaid
-* Other trainers
-* My friend Kristian
-* My friend Leila
-* My partner Urmas
+* Thank you to all the trainers from QA who have enabled me to complete this project successfully.
+
 # IMS-Project
 # IMS-Project
