@@ -57,6 +57,9 @@ They test the controller classes associated with each entity, in order to test w
 
 We use GitHub(https://github.com/) for versioning.
 
+## Project tracking
+Jira (https://mnikolova.atlassian.net/jira/software/projects/IMS/boards/4/reports) was used for project tracking.
+
 ## Authors
 
 * **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
