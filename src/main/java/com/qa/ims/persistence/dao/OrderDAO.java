@@ -87,7 +87,9 @@ public class OrderDAO implements Dao<Order>{
 				PreparedStatement statement = connection
 						.prepareStatement("INSERT INTO orders(customer_id) SELECT id FROM customers WHERE id = ?", Statement.RETURN_GENERATED_KEYS); 
 				PreparedStatement statement2= connection.prepareStatement("INSERT INTO order_items(order_id) SELECT id FROM orders WHERE id = ?");){
-			statement.setLong(1, order.getCustomer().getId());
+			CustomerDAO dao = new CustomerDAO();
+			Customer customer = dao.readLatest();
+			statement.setLong(1, customer.getId());
 			statement.executeUpdate();
 			
 			//getting the id of the last order added so we can also add this order to the OrderItems table
