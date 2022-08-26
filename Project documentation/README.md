@@ -3,9 +3,16 @@ Coverage: 34%
 
 This is a Java project based on CRUD functionality, which allows an end user to manage an SQL database using a Command-Line Interface (CLI).
 
+## MoSCoW prioritisation
+
+- Must have
+- Should have 
+- Could have 
+- Won't have 
+
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
