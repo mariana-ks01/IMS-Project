@@ -100,7 +100,7 @@ public class OrderDAO implements Dao<Order>{
 		    //updating the OrderItems table
 		    statement2.executeUpdate();
 		    
-			return readLatest();
+			return readLatest();  
 		} catch (Exception e) {
 			LOGGER.debug(e);
 			LOGGER.error(e.getMessage());

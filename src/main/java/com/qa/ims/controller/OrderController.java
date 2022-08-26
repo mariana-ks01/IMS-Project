@@ -9,7 +9,6 @@ import com.qa.ims.persistence.dao.CustomerDAO;
 import com.qa.ims.persistence.dao.OrderDAO;
 import com.qa.ims.persistence.domain.Customer;
 import com.qa.ims.persistence.domain.Order;
-import com.qa.ims.persistence.domain.OrderItem;
 import com.qa.ims.utils.Utils;
 
 public class OrderController implements CrudController<Order>{
@@ -45,7 +44,7 @@ public class OrderController implements CrudController<Order>{
 		Order order = orderDAO.create(new Order(customer));
 
 		LOGGER.info("Order created, please select RETURN -> ORDER ITEMS -> UPDATE to add items to the order.");
-		return order;
+		return order;  
 	}
 
 	@Override
@@ -67,6 +66,7 @@ public class OrderController implements CrudController<Order>{
 	public int delete() {
 		LOGGER.info("Please enter the id of the order you would like to delete");
 		Long id = utils.getLong();
+		LOGGER.info("Order deleted");
 		return orderDAO.delete(id);
 	}
 	
